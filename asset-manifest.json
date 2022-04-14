@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/equacoes/static/css/main.c9b5a18f.css",
+    "main.js": "/equacoes/static/js/main.7c011b80.js",
+    "static/js/787.6a19e0a1.chunk.js": "/equacoes/static/js/787.6a19e0a1.chunk.js",
+    "index.html": "/equacoes/index.html",
+    "main.c9b5a18f.css.map": "/equacoes/static/css/main.c9b5a18f.css.map",
+    "main.7c011b80.js.map": "/equacoes/static/js/main.7c011b80.js.map",
+    "787.6a19e0a1.chunk.js.map": "/equacoes/static/js/787.6a19e0a1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c9b5a18f.css",
+    "static/js/main.7c011b80.js"
+  ]
+}
