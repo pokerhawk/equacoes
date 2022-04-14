@@ -6,28 +6,28 @@ class Home extends React.Component {
     constructor(props){
         super(props);
         this.state = {
-            home:'home'
+            home:'Início'
         }
     }
    
-    onClickEvent=()=>{this.setState({home:'Bhaskara'})}
-    onClickPA =()=>{this.setState({home:'PA'})}
-    onClickReturn =()=>{this.setState({home:'home'})} //NEED changes here
-
+    onClickEvent=(event)=>{this.setState({home: event.target.innerHTML})}
+    ///////////////////////////////MAKE CHANGES ON THIS IF BELOW////////////////////////
     render(){
-        if(this.state.home === 'home'){
+        if(this.state.home === 'Início'){
             return (
                 <div className="equaSegGrau">
                     <ul className='lista'>
                         <h1>Escolha uma formula</h1>
                         <button 
-                            id='Bhaskara' 
+                            id='Bhaskara' //not being used, can delete
+                            value={this.id}//not being used, can delete
                             onClick={this.onClickEvent}>
                             Bhaskara
                         </button>
                         <button 
-                            id='PA' 
-                            onClick={this.onClickPA}>
+                            id='PA' //not being used, can delete
+                            value={this.id}//not being used, can delete
+                            onClick={this.onClickEvent}>
                             PA
                         </button>
                     </ul>
@@ -37,14 +37,24 @@ class Home extends React.Component {
             return(
                 <div>
                     <Bhaskara/>
-                    <button onClick={this.onClickReturn}>Voltar ao Início</button>
+                    <button 
+                    className='home'//not being used, can delete
+                    value={this.className} //not being used, can delete
+                    onClick={this.onClickEvent}>
+                        Início
+                    </button>
                 </div>
             )
-        } else {
+        } else if(this.state.home === 'PA'){
             return(
             <div>
                 <ProgAritmética/>
-                <button onClick={this.onClickReturn}>Voltar ao Início</button>
+                <button
+                className='home'//not being used, can delete 
+                value={this.className}//not being used, can delete
+                onClick={this.onClickEvent}>
+                    Início
+                </button>
             </div>
             )
         }
