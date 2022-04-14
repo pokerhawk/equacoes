@@ -1,5 +1,5 @@
 import React from 'react';
-import '../Style/style.css'
+import './Bhaskara.css'
 
 class Bhaskara extends React.Component {
 

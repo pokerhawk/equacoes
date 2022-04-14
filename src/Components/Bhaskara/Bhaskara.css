@@ -1,0 +1,23 @@
+.equaSegGrau {
+    background-color: gray;
+    margin: 10px 0px 0px 0px;
+    padding: 0px 0px 5px 0px;
+    display: grid;
+}
+h1 {
+    justify-self: center;
+}
+  
+p {
+    justify-self: start;
+}
+
+p,
+input,
+button {
+    display: grid;
+    font-size: 1.1em;
+    margin: 1px;
+    width: 110px;
+    justify-self: center;
+}

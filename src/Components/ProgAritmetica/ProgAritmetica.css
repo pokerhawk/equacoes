@@ -1,0 +1,13 @@
+.PAdiv {
+    background-color: purple;
+    padding: 15px 0px 5px 0px;
+    display: grid;
+}
+
+.PAdiv > p {
+    color: white;
+}
+
+.PAdiv > h1 {
+    color: white;
+}

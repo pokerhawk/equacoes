@@ -1,5 +1,5 @@
 import React from 'react';
-import '../Style/style.css'
+import './ProgAritmetica.css'
 
 class ProgAritmética extends React.Component {
 
@@ -13,7 +13,7 @@ class ProgAritmética extends React.Component {
 
     render(){
         return (
-            <div className="equaPA">
+            <div className="PAdiv">
                 <h1>Progressão Aritmética</h1>
                 <input type="text" id="coefA1" placeholder="A1" /><p/>
                 <input type="text" id="coefN" placeholder="N" /><p/>
