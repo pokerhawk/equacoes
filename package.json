@@ -1,7 +1,7 @@
 {
   "name": "equationsapp",
   "version": "0.1.0",
-  "homepage": "pokerhawk.github.io/equacoes/",
+  "homepage": "https://pokerhawk.github.io/equacoes",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",

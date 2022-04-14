@@ -10,12 +10,8 @@ class Home extends React.Component {
         }
     }
    
-    onClickEvent=()=>{
-        this.setState({home:'Bhaskara'})
-    }
-    onClickPA =()=>{
-        this.setState({home:'PA'})
-    }
+    onClickEvent=()=>{this.setState({home:'Bhaskara'})}
+    onClickPA =()=>{this.setState({home:'PA'})}
     onClickReturn =()=>{this.setState({home:'home'})}
 
     render(){
