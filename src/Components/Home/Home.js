@@ -12,7 +12,7 @@ class Home extends React.Component {
    
     onClickEvent=()=>{this.setState({home:'Bhaskara'})}
     onClickPA =()=>{this.setState({home:'PA'})}
-    onClickReturn =()=>{this.setState({home:'home'})}
+    onClickReturn =()=>{this.setState({home:'home'})} //NEED changes here
 
     render(){
         if(this.state.home === 'home'){
