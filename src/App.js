@@ -35,7 +35,7 @@ class App extends Component {
               PA
             </button>
           </ul>
-          <Footer/>
+          <Footer state={this.state} onClickEvent={this.onClickEvent}/>
         </div>
       )
     } else if (this.state.home === 'Bhaskara'){
@@ -43,13 +43,7 @@ class App extends Component {
         <div>
           <Clock/>
           <Bhaskara/>
-          <button 
-            className='home'//not being used, can delete
-            value={this.className} //not being used, can delete
-            onClick={this.onClickEvent}>
-            Início
-          </button>
-          <Footer/>
+          <Footer state={this.state} onClickEvent={this.onClickEvent}/>
         </div>
       )
     } else if(this.state.home === 'PA'){
@@ -57,13 +51,7 @@ class App extends Component {
         <div>
           <Clock/>
           <ProgAritmética/>
-          <button
-            className='home'//not being used, can delete 
-            value={this.className}//not being used, can delete
-            onClick={this.onClickEvent}>
-          Início
-          </button>
-          <Footer/>
+          <Footer state={this.state} onClickEvent={this.onClickEvent}/>
         </div>
       )
     }

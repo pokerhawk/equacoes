@@ -1,5 +1,5 @@
 html{
-  background-image: url(https://wallpapercave.com/wp/wp9221205.jpg);
+  background-image: url(https://wallpaperaccess.com/full/917802.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -8,21 +8,23 @@ html{
 }
 
 .App {
-  background-color: rgba(0, 0, 0, 0.4);
   text-align: center;
   padding: 10px 0px 5px 0px;
 }
 
 .lista {
-  list-style: none;
   display: grid;
-  padding-top: 0px;
   justify-content: center;
+  list-style: none;
+  padding-top: 0px;
+  padding-bottom: 15px;
+  margin: 0px 10vh;
+  background-color: rgba(0, 0, 0, 0.75);
 }
 
 h1 {
   justify-self: center;
-  color: white;
+  color: black;
 }
 button{
   align-self: center;

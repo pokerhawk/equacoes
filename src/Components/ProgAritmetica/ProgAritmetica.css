@@ -1,7 +1,8 @@
 .PAdiv {
-    background-color: purple;
-    padding: 15px 0px 5px 0px;
     display: grid;
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 15px 0px 5px 0px;
+    margin: 0px 10vh;
 }
 
 .PAdiv > p {
