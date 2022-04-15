@@ -7,14 +7,24 @@ class Bhaskara extends React.Component {
         coefA = document.getElementById("coefA").value;
         coefB = document.getElementById("coefB").value;
         coefC = document.getElementById("coefC").value;
-        const e2gResposta = document.getElementById("e2gResposta");
+        const bhaskaraResposta = document.getElementById("bhaskaraResposta");
         let delta = Math.sqrt((coefB)**2 - 4*coefA*coefC);
-        let positivo = (-(coefB) + (delta))/(2*coefA);
-        let negativo = (-(coefB) - (delta))/(2*coefA);
-        let resposta = `x'=${positivo}
-        x"=${negativo}
-        delta=${delta}`;
-        return e2gResposta.innerText = resposta;
+        if(isNaN(delta)){
+            let deltaNaN = (coefB)**2 - 4*coefA*coefC;
+            let positivoNaN = `-${coefB}+raiz²(${deltaNaN})/${2*coefA}`;
+            let negativoNaN = `-${coefB}-raiz²(${deltaNaN})/${2*coefA}`;
+            let respostaNaN = `x'=${positivoNaN}
+        x"=${negativoNaN}
+        delta=raiz²(${deltaNaN})`;
+            return bhaskaraResposta.innerText = respostaNaN
+        } else {
+            let positivo = (-(coefB) + (delta))/(2*coefA);
+            let negativo = (-(coefB) - (delta))/(2*coefA);
+            let resposta = `x'=${positivo}
+            x"=${negativo}
+            delta=${delta}`;
+            return bhaskaraResposta.innerText = resposta
+        }
     }
     addEnter = (event) => {
         if(event.key === "Enter"){
@@ -24,17 +34,19 @@ class Bhaskara extends React.Component {
     
     render(){
         return (
-            <div className="equaSegGrau">
-                <h1>Equação do Segundo grau</h1>
-                <p>A:</p>
-                <input type="text" id="coefA" placeholder="Coeficiente A" onKeyPress={this.addEnter}/>
-                <p>B:</p>
-                <input type="text" id="coefB" placeholder="Coeficiente B" onKeyPress={this.addEnter}/>
-                <p>C:</p>
-                <input type="text" id="coefC" placeholder="Coeficiente C" onKeyPress={this.addEnter}/>
-                <p></p>
-                <button id="button" onClick={this.bhaskara}>Calcular</button>
-                <p id="e2gResposta">Resposta</p>
+            <div className='componenteBhaskara'>
+                <div className="equaSegGrau">
+                    <h1>Equação do Segundo grau</h1>
+                    <p>A:</p>
+                    <input type="text" id="coefA" placeholder="Coeficiente A" onKeyPress={this.addEnter}/>
+                    <p>B:</p>
+                    <input type="text" id="coefB" placeholder="Coeficiente B" onKeyPress={this.addEnter}/>
+                    <p>C:</p>
+                    <input type="text" id="coefC" placeholder="Coeficiente C" onKeyPress={this.addEnter}/>
+                    <p></p>
+                    <button id="button" onClick={this.bhaskara}>Calcular</button>
+                </div>
+                <p id="bhaskaraResposta">Resposta</p>
             </div>
         );
     }

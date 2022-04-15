@@ -21,19 +21,19 @@ class App extends Component {
         <div className="App">
           <Clock/>
           <ul className='lista'>
-          <h1>Escolha uma formula</h1>
-          <button 
-            id='Bhaskara' //not being used, can delete
-            value={this.id}//not being used, can delete
-            onClick={this.onClickEvent}>
-            Bhaskara
-          </button>
-          <button 
-            id='PA' //not being used, can delete
-            value={this.id}//not being used, can delete
-            onClick={this.onClickEvent}>
-            PA
-          </button>
+            <h1>Escolha uma formula</h1>
+            <button 
+              id='Bhaskara' //not being used, can delete
+              value={this.id}//not being used, can delete
+              onClick={this.onClickEvent}>
+              Bhaskara
+            </button>
+            <button 
+              id='PA' //not being used, can delete
+              value={this.id}//not being used, can delete
+              onClick={this.onClickEvent}>
+              PA
+            </button>
           </ul>
           <Footer/>
         </div>

@@ -1,15 +1,29 @@
-.equaSegGrau {
-    background-color: gray;
-    margin: 10px 0px 0px 0px;
-    padding: 0px 0px 5px 0px;
-    display: grid;
+.componenteBhaskara{
+    background-color: rgb(0, 0, 0, 0.5);
 }
+
+.equaSegGrau {
+    display: grid;
+    justify-content: center;
+    margin: 10px 0px 5px 0px;
+    border: 0px 300px 10px 300px;
+    padding: 0px;
+}
+
+#bhaskaraResposta{
+    padding-left: 5%;
+    align-self: center;
+    width:90%;
+    justify-content: center;
+}
+
 h1 {
     justify-self: center;
 }
   
 p {
     justify-self: start;
+    color: white;
 }
 
 p,

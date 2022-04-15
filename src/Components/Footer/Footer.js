@@ -6,12 +6,6 @@ class Footer extends Component{
         return(
             <footer>
                 FOOTER(em progresso...)
-                <button 
-                    className='home'//not being used, can delete
-                    value={this.className} //not being used, can delete
-                    onClick={this.onClickEvent}>
-                        Início
-                </button>
             </footer>
         )
     }
